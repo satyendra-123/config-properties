@@ -1,0 +1,1 @@
+#Config properties to manage common properties for various apis
