@@ -1,6 +1,15 @@
 server:
   port: 8092
 
+security:
+  oauth2:
+    client:
+      clientId: apiuser
+      clientSecret: apipassword
+      accessTokenUri: http://localhost:8093/uaa/oauth/token
+      grant-type: client_credentials
+      scope: server
+
 eureka:
   client:
     serviceUrl:
