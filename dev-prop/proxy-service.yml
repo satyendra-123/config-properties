@@ -14,12 +14,12 @@ zuul:
     auth-service:
       path: /uaa/** #path that will be intercepted
       url: auth-service #which url the request will be mapped to
-    employee:
+    employee-service:
       path: /employee/**
       serviceId: employee-service
-    department:
+    department-service:
       path: /department/**
       serviceId: department-service  
-    organization:
+    organization-service:
       path: /organization/**
       serviceId: organization-service
