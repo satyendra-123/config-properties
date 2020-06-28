@@ -9,6 +9,7 @@ spring:
           username: kotiys
           password: MLCL@345sql
           driver-class-name: com.mysql.jdbc.Driver
+          initialization-mode: always
    jpa:
           hibernate:
              naming:
