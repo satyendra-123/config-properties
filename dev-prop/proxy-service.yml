@@ -19,15 +19,12 @@ zuul:
     employee-service:
       path: /employee/**
       serviceId: employee-service
-      stripPrefix: false
-      sensitiveHeaders:            
+      stripPrefix: false           
     department-service:
       path: /department/**
       serviceId: department-service  
-      stripPrefix: false
-      sensitiveHeaders:      
+      stripPrefix: false     
     organization-service:
       path: /organization/**
       serviceId: organization-service
-      stripPrefix: false
-      sensitiveHeaders:      
+      stripPrefix: false    
