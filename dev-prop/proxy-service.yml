@@ -14,12 +14,20 @@ zuul:
     auth-service:
       path: /uaa/** #path that will be intercepted
       url: auth-service #which url the request will be mapped to
+      stripPrefix: false
+      sensitiveHeaders:      
     employee-service:
       path: /employee/**
       serviceId: employee-service
+      stripPrefix: false
+      sensitiveHeaders:            
     department-service:
       path: /department/**
       serviceId: department-service  
+      stripPrefix: false
+      sensitiveHeaders:      
     organization-service:
       path: /organization/**
       serviceId: organization-service
+      stripPrefix: false
+      sensitiveHeaders:      
