@@ -7,6 +7,7 @@ security:
       clientId: apiuser
       clientSecret: apipassword
       accessTokenUri: http://localhost:8093/uaa/oauth/token
+      userAuthorizationUri: http://localhost:8093/uaa/oauth/authorize
       grant-type: password
       scope: server
 
