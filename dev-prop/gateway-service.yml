@@ -17,6 +17,12 @@ spring:
         locator:
           enabled: true
       routes:
+      - id: auth-service
+        uri: lb://auth-service
+        predicates:
+        - Path=/uaa/**
+        filters:
+        - RewritePath=/uaa/(?<path>.*), /$\{path} 
       - id: employee-service
         uri: lb://employee-service
         predicates:
