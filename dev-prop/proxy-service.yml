@@ -28,5 +28,4 @@ zuul:
       path: /organization/**
       serviceId: organization-service
       stripPrefix: false 
-      sensitive-headers:
-      - Cookie,Set-Cookie   
+      sensitive-headers: Cookie,Set-Cookie,Authorization
